@@ -3,9 +3,10 @@ import styled from 'styled-components'
 import Logo from './logo'
 import Links from './links'
 import Navigation from './navigation/index'
+import { with100vh } from '../utils/use100vh'
 import './global.css'
 
-const Container = styled.div`
+const Container = with100vh(styled.div`
   max-width: 528px;
   padding: 0 1em;
   min-height: 100vh;
@@ -13,7 +14,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
-`
+`)
 
 const Layout = ({ children }) => (
   <Container>
