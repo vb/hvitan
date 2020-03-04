@@ -9,9 +9,10 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 1em 0;
+  margin: 0 0 1em;
 
   @media (min-width: 600px) {
+    margin: 1em 0;
     justify-content: space-around;
   }
 `

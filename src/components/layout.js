@@ -7,7 +7,7 @@ import './global.css'
 
 const Container = styled.div`
   max-width: 528px;
-  padding: 2em 1em;
+  padding: 0 1em;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

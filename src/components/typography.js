@@ -12,6 +12,10 @@ export const Text = styled.p`
   & + & {
     margin-top: 0;
   }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `
 
 export const TextH1 = styled.h1`
