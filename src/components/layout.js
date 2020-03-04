@@ -1,0 +1,29 @@
+import React from 'react'
+import styled from 'styled-components'
+import Logo from './logo'
+import Links from './links'
+import Navigation from './navigation/index'
+import './global.css'
+
+const Container = styled.div`
+  max-width: 528px;
+  padding: 2em 1em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+`
+
+const Layout = ({ children }) => (
+  <Container>
+    <div>
+      <Logo />
+      <Navigation />
+    </div>
+    <main>{children}</main>
+    <Links />
+  </Container>
+)
+
+export default Layout
