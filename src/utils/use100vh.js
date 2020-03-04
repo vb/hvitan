@@ -9,7 +9,7 @@ export default function use100vh() {
     if (!ref.current) {
       return
     }
-    ref.current.style.height = height + 'px'
+    ref.current.style.minHeight = height + 'px'
   }, [height])
 
   return ref

@@ -18,15 +18,15 @@ const pages = [
     name: 'Start',
   },
   {
-    url: '/barbershop',
+    url: '/barbershop/',
     name: 'Barbershop',
   },
   {
-    url: '/tattoo',
+    url: '/tattoo/',
     name: 'Tattoo',
   },
   {
-    url: '/om-hvitan',
+    url: '/om-hvitan/',
     name: 'Om Hvitan',
   },
 ]
