@@ -2,10 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Image from './image'
-import imgSrc from '../images/logo.png'
+import imgSrc from '../images/logo-small.jpg'
 
 const Container = styled(Link)`
-  margin-bottom: 1em;
+  margin: 1em 0;
+  display: block;
 `
 
 const Logo = () => {

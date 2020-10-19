@@ -13,8 +13,8 @@ export const Text = styled.p`
     margin-top: 0;
   }
 
-  &:last-child {
-    margin-bottom: 0;
+  a {
+    color: inherit;
   }
 `
 

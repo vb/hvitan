@@ -10,7 +10,7 @@ const Button = styled.a`
   text-decoration: none;
   display: flex;
   align-items: center;
-  width: 200px;
+  width: 210px;
   justify-content: center;
 
   svg {

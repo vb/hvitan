@@ -20,6 +20,11 @@ const Container = styled.div`
     margin-right: -250px;
     padding: 0 1em;
   }
+
+  a {
+    color: inherit;
+    font-weight: bold;
+  }
 `
 
 const Column = styled.div`

@@ -9,7 +9,6 @@ import './global.css'
 const Container = with100vh(styled.div`
   max-width: 528px;
   padding: 0 1em;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

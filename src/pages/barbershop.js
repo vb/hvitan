@@ -13,10 +13,11 @@ const Barbershop = () => (
       <H1>Barbershop</H1>
     </Mobile>
     <Text>
-      Vår barbershop levererar service av högsta kvalitet. Vi erbjuder klassiska
-      herrfrisyrer i en modern tappning, skäggtrimningar och knivrakningar. Vi
-      säljer även lokalt producerade hår och skäggvårdsprodukter.
+      Vi erbjuder klassiska herrfrisyrer i en modern tappning, skäggtrimningar
+      och knivrakningar. Vi säljer även lokalt producerade hår och
+      skäggvårdsprodukter.
     </Text>
+    <Prices />
     <Button
       data-ga="Barbershop button from startpage"
       href="https://www.timecenter.se/hvitan/"
@@ -24,7 +25,6 @@ const Barbershop = () => (
     >
       Boka tid
     </Button>
-    <Prices />
   </Layout>
 )
 

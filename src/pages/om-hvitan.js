@@ -5,6 +5,8 @@ import SEO from '../components/seo'
 import johanSrc from '../images/johan-olsson-barberare-hvitan.jpg'
 import henrySrc from '../images/henry-apler-barberare-hvitan.jpg'
 import davidSrc from '../images/david-jonsson-barberare-hvitan.jpg'
+import olleSrc from '../images/olle-alm-tattoo-hvitan.jpg'
+import jonteSrc from '../images/jonatan-palm-tattoo-hvitan.jpeg'
 import Img from '../components/image'
 import Container from '../components/container'
 import { Mobile } from '../components/responsive'
@@ -15,15 +17,7 @@ const About = () => (
     <Mobile>
       <H1>Om Hvitan</H1>
     </Mobile>
-    <Text>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
-    </Text>
+    <Text>Någon bra inledande text kanske</Text>
     <Container
       text={
         <>
@@ -71,6 +65,50 @@ const About = () => (
         </>
       }
       image={<Img src={davidSrc} alt="David Jonsson Barbershop Hvitan" />}
+      textFirst
+    />
+    <Container
+      text={
+        <>
+          <H2>Olle Alm</H2>
+          <Text>
+            Olle gick som lärling på den högt aktade studion East Street Tattoo
+            där han även jobbat de senaste 6 åren. Olle gör de flesta typer av
+            tatueringar men han föredrar de mer traditionella. Besök{' '}
+            <a
+              href="https://www.instagram.com/ollejunior/"
+              target="_blank"
+              data-ga="Olle Instagram button"
+            >
+              @ollejunior
+            </a>{' '}
+            för att se ett axplock av de tatueringar han gjort.
+          </Text>
+        </>
+      }
+      image={<Img src={olleSrc} alt="Olle Alm Tattoo Hvitan" />}
+    />
+    <Container
+      text={
+        <>
+          <H2>Jonatan Palm</H2>
+          <Text>
+            Jonatan kommer från Halmstad där han gick som lärling hos Amigo Ink.
+            Sedan 2014 bor han i Stockholm och har varit hos Kollektivet Hvitan
+            sedan 2018. Tunna linjer är lite av Jonatans specialitet men även
+            traditionella designer går fint. Besök{' '}
+            <a
+              href="https://www.instagram.com/jonatanpalm/"
+              target="_blank"
+              data-ga="Olle Instagram button"
+            >
+              @jonatanpalm
+            </a>{' '}
+            för att se vad han hittar på för något.
+          </Text>
+        </>
+      }
+      image={<Img src={jonteSrc} alt="Jonatan Palm Tattoo Hvitan" />}
       textFirst
     />
   </Layout>

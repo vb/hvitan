@@ -43,24 +43,17 @@ const Links = () => {
       <Link
         href="https://www.instagram.com/kollektivet.hvitan/"
         data-ga="Instagram button"
-        target="_blank"
-        rel="nofollow noopener"
+        external
       >
         <InstagramIcon /> @kollektivet.hvitan
       </Link>
-      <Link
-        data-ga="Contact button"
-        href="mailto:shopen@hvitan.com"
-        target="_blank"
-        rel="nofollow noopener"
-      >
+      <Link data-ga="Contact button" href="mailto:shopen@hvitan.com" external>
         <MailIcon /> shopen@hvitan.com
       </Link>
       <Link
         href="https://www.facebook.com/hvitan/"
         data-ga="Facebook button"
-        target="_blank"
-        rel="nofollow noopener"
+        external
       >
         <FacebookIcon /> /hvitan
       </Link>
