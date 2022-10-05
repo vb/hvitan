@@ -8,12 +8,12 @@ const { title } = Astro.props;
 ---
 
 <nav id="navigation">
-  <a href="/" class={title === 'Start' ? 'active' : ''}>Start</a>
-  <a href="/barbershop" class={title === 'Barbershop' ? 'active' : ''}
+  <a href="/hvitan/" class={title === 'Start' ? 'active' : ''}>Start</a>
+  <a href="/hvitan/barbershop" class={title === 'Barbershop' ? 'active' : ''}
     >Barbershop</a
   >
-  <a href="/tattoo" class={title === 'Tattoo' ? 'active' : ''}>Tattoo</a>
-  <a href="/om-hvitan" class={title === 'Om Hvitan' ? 'active' : ''}
+  <a href="/hvitan/tattoo" class={title === 'Tattoo' ? 'active' : ''}>Tattoo</a>
+  <a href="/hvitan/om-hvitan" class={title === 'Om Hvitan' ? 'active' : ''}
     >Om Hvitan</a
   >
 </nav>
@@ -25,19 +25,19 @@ const { title } = Astro.props;
 
 <script>
   const btn = document.getElementById('mobile-btn');
-  btn.addEventListener('click', () => {
+  btn?.addEventListener('click', () => {
     const closeIcon = document.getElementById('close-icon');
     const hamburgerIcon = document.getElementById('hamburger-icon');
     const nav = document.getElementById('navigation');
 
-    if (nav.classList.contains('mobile-visisble')) {
-      nav.classList.remove('mobile-visisble');
-      hamburgerIcon.classList.remove('hidden');
-      closeIcon.classList.add('hidden');
+    if (nav?.classList.contains('mobile-visisble')) {
+      nav?.classList.remove('mobile-visisble');
+      hamburgerIcon?.classList.remove('hidden');
+      closeIcon?.classList.add('hidden');
     } else {
-      closeIcon.classList.remove('hidden');
-      hamburgerIcon.classList.add('hidden');
-      nav.classList.add('mobile-visisble');
+      closeIcon?.classList.remove('hidden');
+      hamburgerIcon?.classList.add('hidden');
+      nav?.classList.add('mobile-visisble');
     }
   });
 
@@ -46,7 +46,7 @@ const { title } = Astro.props;
     const nav = document.getElementById('navigation');
 
     if (width >= 600) {
-      nav.classList.remove('mobile-visisble');
+      nav?.classList.remove('mobile-visisble');
     }
   });
 </script>
