@@ -1,0 +1,182 @@
+---
+import MobileHeader from '../components/MobileHeader.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Om Hvitan">
+  <MobileHeader>Om Hvitan</MobileHeader>
+  <div class="container centered">
+    <p>Någon bra inledande text kanske</p>
+  </div>
+
+  <div class="container">
+    <div class="column">
+      <h2>Johan Olsson</h2>
+      <p>
+        Johan började som lärling på en barbershop i Stockholm 2012 för att
+        sedan fortsätta sin utbildning på London school of barbering, en av
+        Londons bästa barberarskolor. Direkt efter utbildningen började han
+        jobba på en barbershop där han efter kort tid stod fullbokad. Han hann
+        även med att gå en kurs i Rotterdam för att få en större inblick i andra
+        barberares sätt att jobba på.
+      </p>
+    </div>
+    <div class="column image">
+      <figure>
+        <img
+          src="/johan-olsson-barberare-hvitan.jpg"
+          alt="Johan Olsson Barbershop Hvitan"
+        />
+      </figure>
+    </div>
+  </div>
+  <div class="container">
+    <div class="column image">
+      <figure>
+        <img
+          src="/henry-apler-barberare-hvitan.jpg"
+          alt="Henry Apler Barbershop Hvitan"
+        />
+      </figure>
+    </div>
+    <div class="column">
+      <h2>Henry Apler</h2>
+      <p>
+        Henry följde sin väns fotspår och blev 2014 lärling i den barbershop där
+        Johan jobbade. Han fattade tycke för yrket snabbt och redan 2015 åkte
+        han för att utbilda sig på The Knights School of Barbering i Dublin,
+        Irland. Med ett tidigare intresse för de klassiska frisyrerna från 40
+        och 50-talet och mycket slit så stod Henry snabbt fullbokad när han kom
+        hem till Stockholm efter utbildningen.
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="column">
+      <h2>David Jonsson</h2>
+      <p>
+        David är det nyaste tillskottet på Kollektivet Hvitan där han började
+        som lärling under våren 2017. Därefter gick det fort och under sommaren
+        samma år gick han i Johans fotspår och utbildade sig i en av Londons
+        främsta barberingsskolor, London School of Barbering.
+      </p>
+    </div>
+    <div class="column image">
+      <figure>
+        <img
+          src="/david-jonsson-barberare-hvitan.jpg"
+          alt="David Jonsson Barbershop Hvitan"
+        />
+      </figure>
+    </div>
+  </div>
+  <div class="container">
+    <div class="column image">
+      <figure>
+        <img src="/olle-alm-tattoo-hvitan.jpg" alt="Olle Alm Tattoo Hvitan" />
+      </figure>
+    </div>
+    <div class="column">
+      <h2>Olle Alm</h2>
+      <p>
+        Olle gick som lärling på den högt aktade studion East Street Tattoo där
+        han även jobbat de senaste 6 åren. Olle gör de flesta typer av
+        tatueringar men han föredrar de mer traditionella. Besök
+        <a
+          href="https://www.instagram.com/ollejunior/"
+          target="_blank"
+          data-ga="Olle Instagram button">@ollejunior</a
+        > för att se ett axplock av de tatueringar han gjort.
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="column">
+      <h2>Jonatan Palm</h2>
+      <p>
+        Jonatan kommer från Halmstad där han gick som lärling hos Amigo Ink.
+        Sedan 2014 bor han i Stockholm och har varit hos Kollektivet Hvitan
+        sedan 2018. Tunna linjer är lite av Jonatans specialitet men även
+        traditionella designer går fint. Besök
+        <a
+          href="https://www.instagram.com/jonatanpalm/"
+          target="_blank"
+          data-ga="Olle Instagram button">@jonatanpalm</a
+        >
+        för att se vad han hittar på för något.
+      </p>
+    </div>
+    <div class="column image">
+      <figure>
+        <img
+          src="/jonatan-palm-tattoo-hvitan.jpeg"
+          alt="Jonatan Palm Tattoo Hvitan"
+        />
+      </figure>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  h2 {
+    letter-spacing: 2px;
+    background: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 1em 0px 0.5em;
+    font-weight: normal;
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  .column {
+    width: 100%;
+    order: 2;
+  }
+
+  .column.image {
+    order: 1;
+  }
+
+  @media screen and (min-width: 600px) {
+    .container {
+      margin-left: calc(-50vw + 264px);
+      margin-right: calc(-50vw + 264px);
+      flex-direction: row;
+      margin-bottom: 0em;
+    }
+    .column {
+      width: 50%;
+      order: 1;
+    }
+    .image + .column {
+      padding: 1em 0 1em 1em;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .container {
+      flex-flow: row;
+      width: 1028px;
+      margin-left: -250px;
+      margin-right: -250px;
+      padding: 0px 1em;
+    }
+  }
+</style>

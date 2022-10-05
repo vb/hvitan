@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Start">
+  <div class="container">
+    <p>
+      Kollektivet Hvitan barber & tattoo
+      <br />
+      <a
+        target="_blank"
+        rel="nofollow noopener"
+        data-ga="Map button"
+        href="https://www.google.com/maps/place/Kollektivet+Hvitan/@59.3103044,18.0827866,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa3344d95566321c8!8m2!3d59.3103044!4d18.0849753?hl=sv-SE"
+        >Katarina Bangata 47</a
+      >
+    </p>
+    <p>
+      Boka <br />
+      <a href="/barbershop">Barbershop</a>&nbsp;&nbsp;
+      <a href="/tattoo">Tattoo</a>
+    </p>
+    <p>Öppettider <br />vardagar 10:00 - 18:00</p>
+  </div>
+</Layout>
+
+<style>
+  @media screen and (min-width: 600px) {
+    .container {
+      text-align: center;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    border-bottom: 2px solid rgb(34, 34, 34);
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+</style>

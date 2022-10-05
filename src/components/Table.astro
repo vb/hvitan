@@ -1,0 +1,49 @@
+---
+interface Props {
+  headings: string[];
+  data: string[][];
+}
+
+const { headings, data } = Astro.props;
+---
+
+<table>
+  <thead>
+    <tr>
+      {headings.map((heading) => <th>{heading}</th>)}
+    </tr>
+  </thead>
+  <tbody>
+    {
+      data.map((data) => (
+        <tr>
+          {data.map((cell) => (
+            <td>{cell}</td>
+          ))}
+        </tr>
+      ))
+    }
+  </tbody>
+</table>
+
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 1em 0px;
+  }
+  thead {
+    border-bottom: 1px solid rgb(34, 34, 34);
+    text-align: left;
+  }
+  tbody {
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(34, 34, 34);
+  }
+
+  th,
+  td {
+    padding: 5px 0px;
+  }
+</style>

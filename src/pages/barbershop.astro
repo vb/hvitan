@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Table from '../components/Table.astro';
+import Button from '../components/Button.astro';
+import MobileHeader from '../components/MobileHeader.astro';
+---
+
+<Layout title="Barbershop">
+  <MobileHeader>Barbershop</MobileHeader>
+  <p>
+    Vi erbjuder klassiska herrfrisyrer i en modern tappning, skäggtrimningar och
+    knivrakningar. Vi säljer även lokalt producerade hår och
+    skäggvårdsprodukter.
+  </p>
+
+  <Table
+    headings={['Service', 'Pris']}
+    data={[
+      ['Haircut, 60 min', '620 kr'],
+      ['Beardcut, 30 min', '350 kr'],
+      ['Beard & haircut, 90 min', '970 kr'],
+      ['Straight razor shave, 90 min', '750 kr'],
+      ['Childrens Haircut', '450 kr'],
+    ]}
+  />
+  <Button
+    target="_blank"
+    rel="nofollow noopener"
+    data-ga="Barbershop button from startpage"
+    href="https://www.timecenter.se/hvitan/">Boka tid</Button
+  >
+</Layout>

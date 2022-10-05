@@ -1,0 +1,67 @@
+---
+import Icon from './Icon.astro';
+---
+
+<footer>
+  <li>
+    <a href="tel:0046739777072" data-ga="Phone button"
+      ><Icon icon={'phone'} /> 0739 77 70 72</a
+    >
+  </li>
+  <li>
+    <a
+      href="https://www.instagram.com/kollektivet.hvitan/"
+      data-ga="Instagram button"
+    >
+      <Icon icon={'instagram'} />
+      @kollektivet.hvitan
+    </a>
+  </li>
+  <li>
+    <a data-ga="Contact button" href="mailto:shopen@hvitan.com">
+      <Icon icon={'email'} />
+      shopen@hvitan.com
+    </a>
+  </li>
+  <li>
+    <a href="https://www.facebook.com/hvitan/" data-ga="Facebook button">
+      <Icon icon={'facebook'} />
+      /hvitan
+    </a>
+  </li>
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1em 0px;
+  }
+
+  @media screen and (min-width: 600px) {
+    footer {
+      justify-content: space-around;
+    }
+  }
+
+  li {
+    border: 0px;
+    width: 220px;
+    text-align: left;
+    background-color: transparent;
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+    line-height: 2em;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  a {
+    color: #222;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+</style>

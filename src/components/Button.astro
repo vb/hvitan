@@ -1,0 +1,25 @@
+---
+import Icon from './Icon.astro';
+
+const props = Astro.props;
+---
+
+<a {...props}><Icon icon={'hand'} /><slot /></a>
+
+<style>
+  a {
+    border: 1px solid rgb(34, 34, 34);
+    padding: 0.4em 1.5em;
+    margin: 1em auto;
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 220px;
+    justify-content: center;
+
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+</style>
