@@ -3,26 +3,19 @@ import Layout from '../layouts/Layout.astro';
 import Table from '../components/Table.astro';
 import Button from '../components/Button.astro';
 import MobileHeader from '../components/MobileHeader.astro';
+import { getBarbershopContent } from '../lib/sheet';
+
+const { tableData, text } = await getBarbershopContent();
 ---
 
 <Layout title="Barbershop">
   <MobileHeader>Barbershop</MobileHeader>
+
   <p>
-    Vi erbjuder klassiska herrfrisyrer i en modern tappning, skäggtrimningar och
-    knivrakningar. Vi säljer även lokalt producerade hår och
-    skäggvårdsprodukter.
+    {text}
   </p>
 
-  <Table
-    headings={['Service', 'Pris']}
-    data={[
-      ['Haircut, 60 min', '690 kr'],
-      ['Beardcut, 30 min', '350 kr'],
-      ['Beard & haircut, 90 min', '1040 kr'],
-      ['Straight razor shave, 90 min', '750 kr'],
-      ['Childrens Haircut', '520 kr'],
-    ]}
-  />
+  <Table headings={['Service', 'Pris']} data={tableData} />
   <Button
     target="_blank"
     rel="nofollow noopener"
